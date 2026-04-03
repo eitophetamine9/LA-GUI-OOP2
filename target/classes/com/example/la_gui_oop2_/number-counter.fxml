@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" spacing="40.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.la_gui_oop2_.NumberCounterController">
+    <children>
+        <Label id="countLabel" fx:id="countLabel" text="0" />
+        <HBox alignment="CENTER" spacing="20.0">
+            <children>
+                <Button id="decreaseButton" fx:id="decreaseButton" mnemonicParsing="false" onAction="#onDecrease" text="Decrease" />
+                <Button id="increaseButton" fx:id="increaseButton" mnemonicParsing="false" onAction="#onIncrease" text="Increase" />
+            </children>
+        </HBox>
+    </children>
+</VBox>

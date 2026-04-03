@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="200.0" prefWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.la_gui_oop2_.SimpleCalculatorController">
+    <children>
+        <HBox alignment="CENTER" spacing="15.0">
+            <children>
+                <VBox alignment="CENTER" spacing="5.0">
+                    <children>
+                        <Label text="1st Number" />
+                        <TextField fx:id="tfNumber1" prefWidth="80.0" />
+                    </children>
+                </VBox>
+                <VBox alignment="BOTTOM_CENTER">
+                    <children>
+                        <ComboBox fx:id="cbOperations" prefWidth="60.0">
+                            <VBox.margin>
+                                <Insets bottom="2.0" />
+                            </VBox.margin>
+                        </ComboBox>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" spacing="5.0">
+                    <children>
+                        <Label text="2nd Number" />
+                        <TextField fx:id="tfNumber2" prefWidth="80.0" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" spacing="5.0">
+                    <children>
+                        <Label text="Result" />
+                        <Label fx:id="lblResult" alignment="CENTER" prefHeight="25.0" prefWidth="80.0" style="-fx-border-color: #a9a9a9; -fx-border-radius: 3; -fx-background-color: #e8e8e8; -fx-background-radius: 3;" />
+                    </children>
+                </VBox>
+            </children>
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </HBox>
+        <Button fx:id="btnCompute" mnemonicParsing="false" onAction="#onCompute" text="Compute Result" />
+    </children>
+</VBox>

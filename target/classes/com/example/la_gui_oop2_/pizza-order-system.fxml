@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.la_gui_oop2_.PizzaOrderController">
+    <children>
+        <Label prefHeight="17.0" prefWidth="150.0" text="Size:" />
+        <ChoiceBox id="pizzaSizeChoice" fx:id="pizzaSizeChoice" prefWidth="150.0">
+            <VBox.margin>
+                <Insets bottom="15.0" />
+            </VBox.margin>
+        </ChoiceBox>
+        <Label prefHeight="17.0" prefWidth="148.0" text="Toppings:" />
+        <ChoiceBox fx:id="pizzaToppingsChoice" prefWidth="150.0">
+            <VBox.margin>
+                <Insets bottom="15.0" />
+            </VBox.margin>
+        </ChoiceBox>
+        <Label prefHeight="17.0" prefWidth="153.0" text="Extra Cheese:" />
+        <ChoiceBox fx:id="extraCheeseChoice" prefWidth="150.0">
+            <VBox.margin>
+                <Insets bottom="15.0" />
+            </VBox.margin>
+        </ChoiceBox>
+        <Button fx:id="calculateButton" mnemonicParsing="false" onAction="#onCalculateButton" text="Calculate Total">
+            <VBox.margin>
+                <Insets bottom="15.0" />
+            </VBox.margin>
+        </Button>
+        <Label fx:id="totalLabel" />
+    </children>
+</VBox>
